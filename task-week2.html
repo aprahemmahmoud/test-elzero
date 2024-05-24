@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data </title>
+    <style>
+        body{background-color: bisque;}
+    </style>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+    <fieldset style="background-color: beige;">
+        <legend><mark style="background-color: rgb(167, 122, 122);"> personal data </mark> </legend>
+        <fieldset style="background-color: rgb(196, 176, 147);">
+            <legend style="background-color:rgb(186, 107, 107) ;">your name</legend>
+            <form  method="get">
+                <table>
+                    <thead>
+            <td><label for="name">first name:</label></td>
+               <td><input minlength="5" type="text" required id="name" name="name" placeholder="Ibrahem"></td>
+                </thead>
+               <td><label for="name2">second name:</label></td>
+            <td><input minlength="5" type="text"  name="name2" id="name2" placeholder="Mahmoud" required></td>
+                </table>
+            </form>
+        </fieldset>
+        <form action="login.html" method="get">
+            <table>
+            <thead>
+                <tr>
+                <th><label for="number">your phone:</label></th>
+                <th><input minlength="11" type="number" required id="number" name="number" placeholder="+011111111111"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" required id="email" name="email" placeholder="name@gmail.com"></td>
+                </tr>
+                <tr>
+                <td><label for="password">password:</label></td>
+                <td><input minlength="8" type="password" required id="password" name="password" placeholder="12345678"></td>
+                </tr>
+            </tbody>
+          </table>
+          <br>
+          <label for="Gender">Gender:</label>
+          <input type="radio" required name="Gender">
+          <label for="Gender">male</label>
+          <input type="radio" required name="Gender">
+          <label for="Gender">female</label>
+          <br>
+          <label  for="color">favorate color:</label>
+          <input type="checkbox" name="color">
+          <label for="color">red</label>
+          <input type="checkbox"  name="color">
+          <label for="color">Green</label>
+          <br>
+          <br>
+          <label for="contry"></label>
+        <select  required name="contry" id="contry">
+            <option disabled >Egypt:</option>
+            <option value="cairo">cairo</option>
+            <option value="Alexanidria">Alexanidria</option>
+            <option value="Behira">Behira</option>
+            <option disabled >Saudi Aradia:</option>
+            <option value="Riyadh">Riyadh</option>
+            <option value="Mecca">Mecca</option>
+            <option value="Madina El Monawara">Madina El Monawara</option>
+            <option disabled >UAE:</option>
+            <option value="Emirate of Abu Dhabi">Emirate of Abu Dhabi</option>
+            <option value="Emirate of Dubai">Emirate of Dubai</option>
+            <option value="Emirate of Sharjah">Emirate of Sharjah</option>
+        </select>
+            <input type="submit" value="agree">
+        </form>
+        
+    </fieldset>
+</body>
+</html>
